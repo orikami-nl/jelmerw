@@ -1,0 +1,25 @@
+fr:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    volvos:
+      title: Volvos
+  admin:
+    volvos:
+      actions:
+        create_new: Créer un(e) nouve(au/l/lle) Volvo
+        reorder: Réordonner les Volvos
+        reorder_done: Fin de réordonnancement des Volvos
+      records:
+        title: Volvos
+        sorry_no_results: "Désolé ! Aucun résultat."
+        no_items_yet: 'Il n''y a actuellement aucun(e) Volvo. Cliquer sur "Créer un(e) nouve(au/l/lle) Volvo" pour créer votre premi(er/ère) volvo.'
+      volvo:
+        view_live_html: Voir ce(t/tte) volvo <br/><em>(Ouvre une nouvelle fenêtre)</em>
+        edit: Modifier ce(t/tte) volvo
+        delete: Supprimer définitivement ce(t/tte) volvo
+  volvos:
+    show:
+      other: Autres Volvos

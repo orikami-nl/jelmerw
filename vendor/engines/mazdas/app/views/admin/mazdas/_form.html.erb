@@ -1,0 +1,131 @@
+<%= form_for [:admin, @mazda] do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages", :locals => {
+          :object => @mazda,
+          :include_object_name => true
+        } %>
+  
+  <div class='field'>
+    <%= f.label :naam -%>
+    <%= f.text_field :naam, :class => 'larger widest'  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :grootte -%>
+    <%= f.text_field :grootte  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :steek -%>
+    <%= f.text_field :steek  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :et -%>
+    <%= f.text_field :et  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :breedte -%>
+    <%= f.text_field :breedte  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :past -%>
+    <%= f.text_field :past  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :spacer -%>
+    <%= f.text_field :spacer  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :tevens -%>
+    <%= f.text_field :tevens  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :vanaf -%>
+    <%= f.text_field :vanaf  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :afbeelding1 -%>
+    <%= render :partial => "/shared/admin/image_picker", :locals => {
+          :f => f,
+          :field => :afbeelding1_id,
+          :image => @mazda.afbeelding1,
+          :toggle_image_display => false
+        } %>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :afbeelding2 -%>
+    <%= render :partial => "/shared/admin/image_picker", :locals => {
+          :f => f,
+          :field => :afbeelding2_id,
+          :image => @mazda.afbeelding2,
+          :toggle_image_display => false
+        } %>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :afbeelding3 -%>
+    <%= render :partial => "/shared/admin/image_picker", :locals => {
+          :f => f,
+          :field => :afbeelding3_id,
+          :image => @mazda.afbeelding3,
+          :toggle_image_display => false
+        } %>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :afbeelding4 -%>
+    <%= render :partial => "/shared/admin/image_picker", :locals => {
+          :f => f,
+          :field => :afbeelding4_id,
+          :image => @mazda.afbeelding4,
+          :toggle_image_display => false
+        } %>
+  </div>
+ 
+  <div class='field'>
+    <%= f.label :afbeelding5 -%>
+    <%= render :partial => "/shared/admin/image_picker", :locals => {
+          :f => f,
+          :field => :afbeelding5_id,
+          :image => @audi.afbeelding5,
+          :toggle_image_display => false
+        } %>
+  </div>
+
+
+  <div class='field'>
+    <%= f.label :afbeelding6 -%>
+    <%= render :partial => "/shared/admin/image_picker", :locals => {
+          :f => f,
+          :field => :afbeelding6_id,
+          :image => @audi.afbeelding6,
+          :toggle_image_display => false
+        } %>
+  </div>
+
+
+  <div class='field'>
+    <%= f.label :afbeelding7 -%>
+    <%= render :partial => "/shared/admin/image_picker", :locals => {
+          :f => f,
+          :field => :afbeelding7_id,
+          :image => @audi.afbeelding7,
+          :toggle_image_display => false
+        } %>
+  </div>
+ 
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('delete', :scope => 'admin.mazdas.mazda'),
+                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @mazda.naam)
+              } %>
+<% end -%>

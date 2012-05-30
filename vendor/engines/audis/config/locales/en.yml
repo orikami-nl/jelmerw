@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    audis:
+      title: Audis
+  admin:
+    audis:
+      actions:
+        create_new: Add New Audi
+        reorder: Reorder Audis
+        reorder_done: Done Reordering Audis
+      records:
+        title: Audis
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Audis yet. Click "Add New Audi" to add your first audi.
+      audi:
+        view_live_html: View this audi live <br/><em>(opens in a new window)</em>
+        edit: Edit this audi
+        delete: Remove this audi forever
+  audis:
+    show:
+      other: Other Audis

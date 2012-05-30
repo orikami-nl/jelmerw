@@ -1,0 +1,1212 @@
+@charset "UTF-8";
+/*
+  Override default refinery application CSS below.
+  Formatting applies to all frontend.
+*/
+/* 
+ * HTML5 ✰ Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling. 
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ * 
+ * ==|== normalize ==========================================================
+ */
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/* line 27, ../../app/stylesheets/application.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* line 28, ../../app/stylesheets/application.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 29, ../../app/stylesheets/application.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/* line 30, ../../app/stylesheets/application.scss */
+[hidden] {
+  display: none;
+}
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+/* line 42, ../../app/stylesheets/application.scss */
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 44, ../../app/stylesheets/application.scss */
+body {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.231;
+}
+
+/* line 46, ../../app/stylesheets/application.scss */
+body, button, input, select, textarea {
+  font-family: "myriad-pro-1","myriad-pro-2", Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+/* 
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+/* line 56, ../../app/stylesheets/application.scss */
+::-moz-selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 57, ../../app/stylesheets/application.scss */
+::selection {
+  background: #fe57a1;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+/* line 64, ../../app/stylesheets/application.scss */
+a {
+  color: #00e;
+}
+
+/* line 65, ../../app/stylesheets/application.scss */
+a:visited {
+  color: #551a8b;
+}
+
+/* line 66, ../../app/stylesheets/application.scss */
+a:hover {
+  color: #06e;
+}
+
+/* line 67, ../../app/stylesheets/application.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+/* line 70, ../../app/stylesheets/application.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+/* line 77, ../../app/stylesheets/application.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 79, ../../app/stylesheets/application.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 81, ../../app/stylesheets/application.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* line 83, ../../app/stylesheets/application.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 85, ../../app/stylesheets/application.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 87, ../../app/stylesheets/application.scss */
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 89, ../../app/stylesheets/application.scss */
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Redeclare monospace font family: h5bp.com/j */
+/* line 92, ../../app/stylesheets/application.scss */
+pre, code, kbd, samp {
+  font-family: monospace, monospace;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+/* Improve readability of pre-formatted text in all browsers */
+/* line 95, ../../app/stylesheets/application.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 97, ../../app/stylesheets/application.scss */
+q {
+  quotes: none;
+}
+
+/* line 98, ../../app/stylesheets/application.scss */
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* line 100, ../../app/stylesheets/application.scss */
+small {
+  font-size: 85%;
+}
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+/* line 103, ../../app/stylesheets/application.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 104, ../../app/stylesheets/application.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 105, ../../app/stylesheets/application.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+/* line 112, ../../app/stylesheets/application.scss */
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
+/* line 113, ../../app/stylesheets/application.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 114, ../../app/stylesheets/application.scss */
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/e 
+ */
+/* line 126, ../../app/stylesheets/application.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+/*
+ * Correct overflow not hidden in IE9 
+ */
+/* line 132, ../../app/stylesheets/application.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+/* line 139, ../../app/stylesheets/application.scss */
+figure {
+  margin: 0;
+}
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+/* line 146, ../../app/stylesheets/application.scss */
+form {
+  margin: 0;
+}
+
+/* line 147, ../../app/stylesheets/application.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Indicate that 'label' will shift focus to the associated form element */
+/* line 150, ../../app/stylesheets/application.scss */
+label {
+  cursor: pointer;
+}
+
+/* 
+ * 1. Correct color not inheriting in IE6/7/8/9 
+ * 2. Correct alignment displayed oddly in IE6/7 
+ */
+/* line 157, ../../app/stylesheets/application.scss */
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+}
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+/* line 165, ../../app/stylesheets/application.scss */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ * 2. Correct inner spacing displayed oddly in IE6/7
+ */
+/* line 172, ../../app/stylesheets/application.scss */
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+
+/*
+ * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
+ */
+/* line 178, ../../app/stylesheets/application.scss */
+table button, table input {
+  *overflow: auto;
+}
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ */
+/* line 185, ../../app/stylesheets/application.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+/*
+ * Consistent box sizing and appearance
+ */
+/* line 191, ../../app/stylesheets/application.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+}
+
+/* line 192, ../../app/stylesheets/application.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 193, ../../app/stylesheets/application.scss */
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* 
+ * Remove inner padding and border in FF3/4: h5bp.com/l 
+ */
+/* line 199, ../../app/stylesheets/application.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* 
+ * 1. Remove default vertical scrollbar in IE6/7/8/9 
+ * 2. Allow only vertical resizing
+ */
+/* line 206, ../../app/stylesheets/application.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/* Colors for form validity */
+/* line 210, ../../app/stylesheets/application.scss */
+input:invalid, textarea:invalid {
+  background-color: #f0dddd;
+}
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+/* line 217, ../../app/stylesheets/application.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 218, ../../app/stylesheets/application.scss */
+td {
+  vertical-align: top;
+}
+
+/* ==|== primary styles =====================================================
+   Author: 
+   ========================================================================== */
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+/* For image replacement */
+/* line 245, ../../app/stylesheets/application.scss */
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+/* line 246, ../../app/stylesheets/application.scss */
+.ir br {
+  display: none;
+}
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+/* line 249, ../../app/stylesheets/application.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+/* line 252, ../../app/stylesheets/application.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+/* line 255, ../../app/stylesheets/application.scss */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+/* line 258, ../../app/stylesheets/application.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* Contain floats: h5bp.com/q */
+/* line 261, ../../app/stylesheets/application.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 262, ../../app/stylesheets/application.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 263, ../../app/stylesheets/application.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+}
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+}
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 291, ../../app/stylesheets/application.scss */
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  /* Black prints faster: h5bp.com/s */
+  /* line 292, ../../app/stylesheets/application.scss */
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 293, ../../app/stylesheets/application.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 294, ../../app/stylesheets/application.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 295, ../../app/stylesheets/application.scss */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* Don't show links for images, or javascript/internal links */
+  /* line 296, ../../app/stylesheets/application.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 297, ../../app/stylesheets/application.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* h5bp.com/t */
+  /* line 298, ../../app/stylesheets/application.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  /* line 299, ../../app/stylesheets/application.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 301, ../../app/stylesheets/application.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 302, ../../app/stylesheets/application.scss */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
+/* Own CSS */
+/* line 316, ../../app/stylesheets/application.scss */
+.content {
+  font-family: "myriad-pro-1","myriad-pro-2", Arial, Helvetica, sans-serif;
+  width: 1000px;
+  font-weight: 200;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+/* line 325, ../../app/stylesheets/application.scss */
+#home_title {
+  margin-top: 70px;
+  text-align: center;
+}
+/* line 328, ../../app/stylesheets/application.scss */
+#home_title h2 {
+  font-family: "Skolar Bold","Times New Roman",serif;
+  font-size: 60px;
+  margin: 20px auto;
+  width: 650px;
+}
+/* line 334, ../../app/stylesheets/application.scss */
+#home_title p {
+  font-size: 32px;
+  line-height: 50px;
+  margin: 20px auto;
+  font-style: italic;
+}
+
+/* line 342, ../../app/stylesheets/application.scss */
+#body_content_right .inner {
+  margin-top: 5px;
+  margin-right: 20px;
+}
+/* line 346, ../../app/stylesheets/application.scss */
+#body_content_right .inner h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+/* line 350, ../../app/stylesheets/application.scss */
+#body_content_right .inner em {
+  font-style: italic;
+}
+
+/* line 355, ../../app/stylesheets/application.scss */
+#home_languages {
+  margin-bottom: 100px;
+}
+/* line 356, ../../app/stylesheets/application.scss */
+#home_languages p {
+  font-size: 40px;
+}
+
+/* line 362, ../../app/stylesheets/application.scss */
+#home_div {
+  width: 100%;
+  text-align: center;
+}
+/* line 365, ../../app/stylesheets/application.scss */
+#home_div img {
+  -moz-box-shadow: black 2px 2px 10px;
+  -webkit-box-shadow: black 2px 2px 10px;
+  -o-box-shadow: black 2px 2px 10px;
+  box-shadow: black 2px 2px 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* line 373, ../../app/stylesheets/application.scss */
+#home_languages p {
+  font-size: 32px;
+  line-height: 50px;
+  text-align: center;
+  width: 100%;
+}
+/* line 379, ../../app/stylesheets/application.scss */
+#home_languages ul {
+  width: 1000px;
+  height: 120px;
+}
+/* line 382, ../../app/stylesheets/application.scss */
+#home_languages ul li {
+  display: inline-block;
+  list-style: none;
+  width: 120px;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  text-align: center;
+  margin-left: 15px;
+  margin-top: 15px;
+  border: 1px solid #fff;
+  padding-bottom: 4px;
+}
+/* line 393, ../../app/stylesheets/application.scss */
+#home_languages ul li:hover {
+  cursor: pointer;
+  font-weight: 900;
+  border: 1px solid #fff;
+}
+/* line 399, ../../app/stylesheets/application.scss */
+#home_languages ul li#home_li_nl {
+  background-image: url("/images/nl.GIF");
+}
+/* line 402, ../../app/stylesheets/application.scss */
+#home_languages ul li#home_li_en {
+  background-image: url("/images/gbflag.png");
+}
+/* line 405, ../../app/stylesheets/application.scss */
+#home_languages ul li#home_li_es {
+  background-image: url("/images/es.jpg");
+}
+/* line 408, ../../app/stylesheets/application.scss */
+#home_languages ul li#home_li_fr {
+  background-image: url("/images/fr.gif");
+}
+/* line 411, ../../app/stylesheets/application.scss */
+#home_languages ul li#home_li_it {
+  background-image: url("/images/it.gif");
+}
+/* line 414, ../../app/stylesheets/application.scss */
+#home_languages ul li#home_li_po {
+  background-image: url("/images/po.png");
+}
+/* line 417, ../../app/stylesheets/application.scss */
+#home_languages ul li#home_li_de {
+  background-image: url("/images/de.jpg");
+}
+/* line 420, ../../app/stylesheets/application.scss */
+#home_languages ul a {
+  text-decoration: none;
+}
+/* line 422, ../../app/stylesheets/application.scss */
+#home_languages ul a:visited {
+  color: #000000;
+}
+
+/* line 432, ../../app/stylesheets/application.scss */
+.velg-summary {
+  width: 100%;
+  border-bottom: 1px solid #fff;
+}
+/* line 434, ../../app/stylesheets/application.scss */
+.velg-summary.active {
+  background-image: url("/images/background_active.png");
+}
+/* line 436, ../../app/stylesheets/application.scss */
+.velg-summary.active:hover {
+  background-image: url("/images/background_active.png");
+}
+/* line 440, ../../app/stylesheets/application.scss */
+.velg-summary .velg-short {
+  float: left;
+  padding-top: 15px;
+  width: 300px;
+  color: #000;
+}
+/* line 445, ../../app/stylesheets/application.scss */
+.velg-summary .velg-short p {
+  line-height: 20px;
+}
+/* line 446, ../../app/stylesheets/application.scss */
+.velg-summary .velg-short h2 {
+  font-size: 20px;
+}
+/* line 450, ../../app/stylesheets/application.scss */
+.velg-summary:hover {
+  background-color: #C3CEDC;
+}
+
+/* line 456, ../../app/stylesheets/application.scss */
+#velgen li {
+  cursor: pointer;
+  background: #fff;
+}
+
+/* line 461, ../../app/stylesheets/application.scss */
+.velgen-left {
+  width: 500px;
+  padding-right: 2px;
+  float: left;
+  min-height: 300px;
+  position: relative;
+}
+
+/* line 470, ../../app/stylesheets/application.scss */
+.velgen-right {
+  width: 496px;
+  float: right;
+}
+
+/* line 475, ../../app/stylesheets/application.scss */
+#panel-frame {
+  width: 1000px;
+  position: fixed;
+}
+
+/* line 480, ../../app/stylesheets/application.scss */
+.panel {
+  -moz-box-shadow: black 2px 2px 10px 0px;
+  -webkit-box-shadow: black 2px 2px 10px 0px;
+  -o-box-shadow: black 2px 2px 10px 0px;
+  box-shadow: black 2px 2px 10px 0px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -o-border-bottom-right-radius: 10px;
+  -ms-border-bottom-right-radius: 10px;
+  -khtml-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -o-border-top-right-radius: 10px;
+  -ms-border-top-right-radius: 10px;
+  -khtml-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 485px;
+  margin-top: 8px;
+  position: absolute;
+  left: 0;
+}
+/* line 488, ../../app/stylesheets/application.scss */
+.panel -webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+/* line 489, ../../app/stylesheets/application.scss */
+.panel -webkit-scrollbar-button:start:decrement, .panel #doc ::-webkit-scrollbar-button:end:increment {
+  display: block;
+  height: 0;
+  background-color: transparent;
+}
+/* line 490, ../../app/stylesheets/application.scss */
+.panel -webkit-scrollbar-track-piece {
+  background-color: #FAFAFA;
+  -webkit-border-radius: 0;
+  -webkit-border-bottom-right-radius: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+}
+/* line 491, ../../app/stylesheets/application.scss */
+.panel -webkit-scrollbar-thumb:vertical {
+  height: 50px;
+  background-color: #999;
+  -webkit-border-radius: 8px;
+}
+/* line 492, ../../app/stylesheets/application.scss */
+.panel -webkit-scrollbar-thumb:horizontal {
+  width: 50px;
+  background-color: #999;
+  -webkit-border-radius: 8px;
+}
+
+/* line 495, ../../app/stylesheets/application.scss */
+.head {
+  background-color: #ffc72e;
+  padding: 10px;
+  text-align: right;
+}
+
+/* line 501, ../../app/stylesheets/application.scss */
+.velg-full {
+  padding-left: 15px;
+  padding-top: 10px;
+}
+/* line 505, ../../app/stylesheets/application.scss */
+.velg-full h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+/* line 510, ../../app/stylesheets/application.scss */
+.velg-full .button_to {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* line 513, ../../app/stylesheets/application.scss */
+.velg-full .button_to input {
+  background-color: #9badc5;
+}
+
+/* line 518, ../../app/stylesheets/application.scss */
+.velg-thumb {
+  border: 1px solid #000;
+  width: 170px;
+  height: 170px;
+  float: left;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+/* line 523, ../../app/stylesheets/application.scss */
+.velg-thumb.odd {
+  margin-right: 20px;
+}
+/* line 529, ../../app/stylesheets/application.scss */
+.velg-thumb .img-hold {
+  overflow: hidden;
+}
+/* line 533, ../../app/stylesheets/application.scss */
+.velg-thumb .img-hold img {
+  width: auto;
+}
+
+/* line 543, ../../app/stylesheets/application.scss */
+#velg-thumbs {
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 549, ../../app/stylesheets/application.scss */
+.velg-thumb-summary {
+  border: 1px solid #000;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 15px;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 556, ../../app/stylesheets/application.scss */
+.velg-thumb-summary img {
+  height: 100px;
+  width: auto;
+}
+
+/* line 565, ../../app/stylesheets/application.scss */
+.velg-vanaf {
+  width: 90%;
+  text-align: right;
+  font-size: 20px;
+}
+
+/* line 577, ../../app/stylesheets/application.scss */
+#page {
+  overflow: hidden;
+  *zoom: 1;
+  position: relative;
+  z-index: 0;
+}
+
+/* line 584, ../../app/stylesheets/application.scss */
+.inner {
+  padding-bottom: 10px;
+}
+
+/* line 591, ../../app/stylesheets/application.scss */
+#footer {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  width: 90%;
+  margin: auto;
+}
+/* line 596, ../../app/stylesheets/application.scss */
+#footer p {
+  width: 100%;
+}
+/* line 599, ../../app/stylesheets/application.scss */
+#footer .menu {
+  margin-top: 80px;
+  width: 90%;
+  margin: auto;
+  background-color: #fff;
+  border-right: solid 1px #000;
+  margin: 0px;
+  padding: 0 5px 0 5px;
+}
+/* line 601, ../../app/stylesheets/application.scss */
+#footer .menu ul {
+  text-transform: uppercase;
+}
+/* line 605, ../../app/stylesheets/application.scss */
+#footer .menu a {
+  border: none;
+  color: #333;
+  text-decoration: none;
+}
+/* line 609, ../../app/stylesheets/application.scss */
+#footer .menu a:hover {
+  color: #000;
+}
+/* line 612, ../../app/stylesheets/application.scss */
+#footer .menu a.last {
+  border: none;
+}
+/* line 622, ../../app/stylesheets/application.scss */
+#footer .menu.last {
+  border: none;
+}
+/* line 629, ../../app/stylesheets/application.scss */
+#footer .dywfooter {
+  margin-top: 25px;
+  font-size: 11px;
+  float: right;
+}
+
+/* line 642, ../../app/stylesheets/application.scss */
+#body_content_title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 649, ../../app/stylesheets/application.scss */
+#contact #body_content_title {
+  margin-bottom: 0;
+}
+
+/* line 653, ../../app/stylesheets/application.scss */
+#page {
+  float: left;
+}
+
+/* line 659, ../../app/stylesheets/application.scss */
+#language-selector {
+  position: absolute;
+  right: 0px;
+  background-color: #e3e3e3;
+  padding: 10px;
+  z-index: 2;
+}
+/* line 665, ../../app/stylesheets/application.scss */
+#language-selector ul li {
+  line-height: 20px;
+}
+/* line 666, ../../app/stylesheets/application.scss */
+#language-selector ul li.nf {
+  display: none;
+}
+/* line 669, ../../app/stylesheets/application.scss */
+#language-selector ul li.ff {
+  display: block;
+}
+
+/* line 678, ../../app/stylesheets/application.scss */
+.myButton {
+  width: 398px;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #519bc2;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  color: #000;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+}
+
+/* line 698, ../../app/stylesheets/application.scss */
+.myButton:hover {
+  /*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #338eb8), color-stop(1, #519bc2) );
+  background:-moz-linear-gradient( center top, #338eb8 5%, #519bc2 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#338eb8', endColorstr='#519bc2');
+  background-color:#338eb8;*/
+  color: #000;
+  text-shadow: 1px 1px 0px #fff;
+}
+
+/* line 705, ../../app/stylesheets/application.scss */
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+/* line 708, ../../app/stylesheets/application.scss */
+.myButton:visited {
+  color: #000000;
+  position: relative;
+  top: 1px;
+}
+
+/* line 714, ../../app/stylesheets/application.scss */
+#body_content_title {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+/* line 721, ../../app/stylesheets/application.scss */
+.inner {
+  border-top: 7px solid #333333;
+}
+
+/* line 726, ../../app/stylesheets/application.scss */
+#contact #body_content_left {
+  width: 500px;
+  float: left;
+  margin-left: 4px;
+}
+/* line 731, ../../app/stylesheets/application.scss */
+#contact #body_content_right {
+  width: 450px;
+  min-height: 400px;
+  margin-top: 8px;
+  float: left;
+}
+/* line 740, ../../app/stylesheets/application.scss */
+#contact #body_content_title {
+  border-bottom: 5px solid #333333;
+}
+/* line 744, ../../app/stylesheets/application.scss */
+#contact .inner {
+  width: 85%;
+  border-top: 0;
+}
+
+/* line 752, ../../app/stylesheets/application.scss */
+.img-hold {
+  background-image: url("/images/ajax-loader.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 759, ../../app/stylesheets/application.scss */
+.velgen-left {
+  background: url(../images/border.gif) right;
+  background: url(../images/gradient.svg) right;
+  display: block;
+  padding-right: 4px;
+}
+
+/* line 769, ../../app/stylesheets/application.scss */
+.inquiries {
+  background: url(../images/border.gif) right;
+  background: url(../images/gradient.svg) right;
+  width: 500px;
+  padding-right: 4px;
+  padding-top: 10px;
+}
+
+/* line 783, ../../app/stylesheets/application.scss */
+.velgen-right td {
+  height: 22px;
+  padding-right: 25px;
+}
+/* line 786, ../../app/stylesheets/application.scss */
+.velgen-right td.feature {
+  font-weight: bold;
+}
+
+/* line 793, ../../app/stylesheets/application.scss */
+.velg-full h2 {
+  margin-bottom: 20px;
+}
+/* line 796, ../../app/stylesheets/application.scss */
+.velg-full table {
+  width: 460px;
+}
+
+/* line 804, ../../app/stylesheets/application.scss */
+#body_content_left .inner {
+  padding-right: 0px;
+}
+
+/* line 808, ../../app/stylesheets/application.scss */
+#topmenu {
+  float: left;
+  position: relative;
+  left: -50%;
+}
+
+/* line 815, ../../app/stylesheets/application.scss */
+#topmenucontainer {
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+/* line 824, ../../app/stylesheets/application.scss */
+#menu,
+#menu ul {
+  list-style: none;
+}
+
+/* line 828, ../../app/stylesheets/application.scss */
+#menu {
+  background-color: #fff;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 1000px;
+  float: left;
+}
+
+/* line 838, ../../app/stylesheets/application.scss */
+#menu > li {
+  float: left;
+}
+
+/* line 842, ../../app/stylesheets/application.scss */
+#menu li {
+  padding: 0 5px 0 5px;
+  margin: 0;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+/* line 849, ../../app/stylesheets/application.scss */
+#menu li.first {
+  border-left: 1px solid #fff;
+}
+/* line 852, ../../app/stylesheets/application.scss */
+#menu li.last {
+  border-right: 1px solid #fff;
+}
+/* line 855, ../../app/stylesheets/application.scss */
+#menu li:hover {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+/* line 858, ../../app/stylesheets/application.scss */
+#menu li:hover.first {
+  border-left: 1px solid #000;
+}
+/* line 861, ../../app/stylesheets/application.scss */
+#menu li:hover.last {
+  border-right: 1px solid #000;
+}
+
+/* line 866, ../../app/stylesheets/application.scss */
+#menu li a {
+  display: block;
+  height: 1.5em;
+  line-height: 1.5em;
+  text-decoration: none;
+  color: #000;
+}
+
+/* line 874, ../../app/stylesheets/application.scss */
+#menu ul {
+  position: absolute;
+  display: none;
+  z-index: 999;
+}
+
+/* line 882, ../../app/stylesheets/application.scss */
+#menu li:hover ul {
+  display: block;
+}

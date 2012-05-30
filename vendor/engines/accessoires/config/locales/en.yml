@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    accessoires:
+      title: Accessoires
+  admin:
+    accessoires:
+      actions:
+        create_new: Add New Accessoire
+        reorder: Reorder Accessoires
+        reorder_done: Done Reordering Accessoires
+      records:
+        title: Accessoires
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Accessoires yet. Click "Add New Accessoire" to add your first accessoire.
+      accessoire:
+        view_live_html: View this accessoire live <br/><em>(opens in a new window)</em>
+        edit: Edit this accessoire
+        delete: Remove this accessoire forever
+  accessoires:
+    show:
+      other: Other Accessoires

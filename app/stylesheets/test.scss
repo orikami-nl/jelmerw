@@ -1,0 +1,35 @@
+/*
+  Override default refinery application CSS below.
+  Formatting applies to all frontend.
+*/
+
+@import "compass/css3/box-shadow" ;
+
+
+/* Own CSS */
+@mixin rounded-top {
+  $side: top;
+  $radius: 10px;
+
+  border-#{$side}-radius: $radius;
+  -moz-border-radius-#{$side}: $radius;
+  -webkit-border-#{$side}-radius: $radius;
+}
+
+
+.content {
+	@include box-shadow(red 2px 2px 10px); 
+	@include rounded-top; 
+	background-color: #666666 ;
+	width: 1000px ; 
+	margin-left: auto ; 
+	margin-right: auto ; 
+}
+
+img {
+	@include box-shadow(red 2px 2px 10px); 
+	@include rounded-top; 
+}	
+
+
+

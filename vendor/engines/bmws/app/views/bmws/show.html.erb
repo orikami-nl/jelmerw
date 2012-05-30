@@ -1,0 +1,99 @@
+<% content_for :body_content_title do %>
+  <%= @bmw.naam %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Naam</h1>
+    <p>
+      <%=raw @bmw.naam %>
+    </p>
+  </section>
+  <section>
+    <h1>Grootte</h1>
+    <p>
+      <%=raw @bmw.grootte %>
+    </p>
+  </section>
+  <section>
+    <h1>Steek</h1>
+    <p>
+      <%=raw @bmw.steek %>
+    </p>
+  </section>
+  <section>
+    <h1>Et</h1>
+    <p>
+      <%=raw @bmw.et %>
+    </p>
+  </section>
+  <section>
+    <h1>Breedte</h1>
+    <p>
+      <%=raw @bmw.breedte %>
+    </p>
+  </section>
+  <section>
+    <h1>Past</h1>
+    <p>
+      <%=raw @bmw.past %>
+    </p>
+  </section>
+  <section>
+    <h1>Spacer</h1>
+    <p>
+      <%=raw @bmw.spacer %>
+    </p>
+  </section>
+  <section>
+    <h1>Tevens</h1>
+    <p>
+      <%=raw @bmw.tevens %>
+    </p>
+  </section>
+  <section>
+    <h1>Vanaf</h1>
+    <p>
+      <%=raw @bmw.vanaf %>
+    </p>
+  </section>
+  <section>
+    <h1>Afbeelding1</h1>
+    <p>
+      <%= image_fu @bmw.afbeelding1, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Afbeelding2</h1>
+    <p>
+      <%= image_fu @bmw.afbeelding2, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Afbeelding3</h1>
+    <p>
+      <%= image_fu @bmw.afbeelding3, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Afbeelding4</h1>
+    <p>
+      <%= image_fu @bmw.afbeelding4, nil %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="bmws">
+      <% @bmws.each do |bmw| %>
+        <li>
+          <%= link_to bmw.naam, bmw_path(bmw) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

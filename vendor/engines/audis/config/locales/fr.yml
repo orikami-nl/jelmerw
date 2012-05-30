@@ -1,0 +1,25 @@
+fr:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    audis:
+      title: Audis
+  admin:
+    audis:
+      actions:
+        create_new: Créer un(e) nouve(au/l/lle) Audi
+        reorder: Réordonner les Audis
+        reorder_done: Fin de réordonnancement des Audis
+      records:
+        title: Audis
+        sorry_no_results: "Désolé ! Aucun résultat."
+        no_items_yet: 'Il n''y a actuellement aucun(e) Audi. Cliquer sur "Créer un(e) nouve(au/l/lle) Audi" pour créer votre premi(er/ère) audi.'
+      audi:
+        view_live_html: Voir ce(t/tte) audi <br/><em>(Ouvre une nouvelle fenêtre)</em>
+        edit: Modifier ce(t/tte) audi
+        delete: Supprimer définitivement ce(t/tte) audi
+  audis:
+    show:
+      other: Autres Audis

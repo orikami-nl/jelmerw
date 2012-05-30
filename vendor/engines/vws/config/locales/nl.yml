@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    vws:
+      title: Vws
+  admin:
+    vws:
+      actions:
+        create_new: Maak een nieuwe Vw
+        reorder: Wijzig de volgorde van de Vws
+        reorder_done: Klaar met het wijzingen van de volgorde van de Vws
+      records:
+        title: Vws
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Vws. Druk op 'Maak een nieuwe Vw' om de eerste aan te maken.
+      vw:
+        view_live_html: Bekijk deze vw op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze vw
+        delete: Verwijder deze vw voor eeuwig
+  vws:
+    show:
+      other: Andere Vws

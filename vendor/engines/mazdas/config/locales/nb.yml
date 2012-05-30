@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    mazdas:
+      title: Mazdas
+  admin:
+    mazdas:
+      actions:
+        create_new: Lag en ny Mazda
+        reorder: Endre rekkefølgen på Mazdas
+        reorder_done: Ferdig å endre rekkefølgen Mazdas
+      records:
+        title: Mazdas
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Mazdas enda. Klikk på "Lag en ny Mazda" for å legge til din første mazda.
+      mazda:
+        view_live_html: Vis hvordan denne mazda ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne mazda
+        delete: Fjern denne mazda permanent
+  mazdas:
+    show:
+      other: Andre Mazdas

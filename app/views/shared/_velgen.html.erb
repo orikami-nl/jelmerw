@@ -1,0 +1,21 @@
+<% content_for :body_content_left do %>
+<% if !velgen.first.nil? %>
+<div class="velgen-right">
+	rechter tekst.. evt faq
+</div>
+<div id="panel-frame">
+	<div class="panel">
+		<div class="head"><%= render :partial => "/shared/velg_head" %></div>
+		<div class="data"><%= render :partial => "/shared/velg_show" , :object => velgen.first %></div>
+	</div>
+</div>
+<div class="velgen-left">  
+  <ul id="velgen">
+	<%= render :partial => "/shared/velg", :collection => velgen %>
+  </ul>
+</div>
+<div class="clearfix"></div>
+<% else %>
+<%= t("Geen Velgen Beschikbaar") %>
+<% end %>
+<% end %>

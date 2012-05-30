@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    peugeots:
+      title: Peugeots
+  admin:
+    peugeots:
+      actions:
+        create_new: Lag en ny Peugeot
+        reorder: Endre rekkefølgen på Peugeots
+        reorder_done: Ferdig å endre rekkefølgen Peugeots
+      records:
+        title: Peugeots
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Peugeots enda. Klikk på "Lag en ny Peugeot" for å legge til din første peugeot.
+      peugeot:
+        view_live_html: Vis hvordan denne peugeot ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne peugeot
+        delete: Fjern denne peugeot permanent
+  peugeots:
+    show:
+      other: Andre Peugeots

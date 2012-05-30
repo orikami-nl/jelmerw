@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    volvos:
+      title: Volvos
+  admin:
+    volvos:
+      actions:
+        create_new: Add New Volvo
+        reorder: Reorder Volvos
+        reorder_done: Done Reordering Volvos
+      records:
+        title: Volvos
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Volvos yet. Click "Add New Volvo" to add your first volvo.
+      volvo:
+        view_live_html: View this volvo live <br/><em>(opens in a new window)</em>
+        edit: Edit this volvo
+        delete: Remove this volvo forever
+  volvos:
+    show:
+      other: Other Volvos

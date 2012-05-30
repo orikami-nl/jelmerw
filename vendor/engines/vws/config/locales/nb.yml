@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    vws:
+      title: Vws
+  admin:
+    vws:
+      actions:
+        create_new: Lag en ny Vw
+        reorder: Endre rekkefølgen på Vws
+        reorder_done: Ferdig å endre rekkefølgen Vws
+      records:
+        title: Vws
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Vws enda. Klikk på "Lag en ny Vw" for å legge til din første vw.
+      vw:
+        view_live_html: Vis hvordan denne vw ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne vw
+        delete: Fjern denne vw permanent
+  vws:
+    show:
+      other: Andre Vws

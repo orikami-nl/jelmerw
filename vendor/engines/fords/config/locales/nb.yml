@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    fords:
+      title: Fords
+  admin:
+    fords:
+      actions:
+        create_new: Lag en ny Ford
+        reorder: Endre rekkefølgen på Fords
+        reorder_done: Ferdig å endre rekkefølgen Fords
+      records:
+        title: Fords
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Fords enda. Klikk på "Lag en ny Ford" for å legge til din første ford.
+      ford:
+        view_live_html: Vis hvordan denne ford ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne ford
+        delete: Fjern denne ford permanent
+  fords:
+    show:
+      other: Andre Fords

@@ -1,0 +1,73 @@
+<% cache("#{velg_show.id}#{velg_show.naam}#{params[:locale]}") do %> 
+<div class="velg-full">
+#<h2><%= t("Specificaties") + " " + velg_show.naam %></h2> 
+<table>
+<% if !velg_show.steek.blank? %>
+<tr>
+<td class="feature"><%= t("Steek") %></td><td><%=velg_show.steek%></td>
+</tr>
+<% end %>
+<% if !velg_show.et.nil? %>
+<tr>
+<td class="feature"><%= t("ET") %></td><td><%=velg_show.et%></td>
+</tr>
+<% end %>
+<% if !velg_show.grootte.nil? %>
+<tr>
+<td class="feature"><%= t("Inch") %></td><td><%=velg_show.grootte%></td>
+</tr>
+<% end %>
+<% if !velg_show.breedte.nil? %>
+<tr>
+<td class="feature"><%= t("Breedte") %></td><td><%=velg_show.breedte%>J</td>
+</tr>
+<% end %>
+<% if !velg_show.past.empty? %>
+<tr>
+<td class="feature"><%= t("Past Op") %></td><td><%=velg_show.past%></td>
+</tr>
+<% end %>
+<% if !velg_show.spacer.blank? %>
+<tr>
+<td class="feature"><%= t("Spacer") %></td><td><%=velg_show.spacer%></td>
+</tr>
+<% end %>
+<% if !velg_show.tevens.blank? %>
+<tr>
+<td class="feature"><%= t("Past Tevens Op") %></td><td><%=velg_show.tevens%></td>
+</tr>
+<% end %>
+</table>
+<br>
+<% if !velg_show.vanaf.nil? %>
+<p class="velg-vanaf"><%= t("Vanaf") %> <%= velg_show.vanaf %>,- euro</p>
+<% end %>
+<br>
+
+<%= link_to t("Info opvragen of bestellen"), '/' + locale.to_s + '/contact?velg=' + velg_show.naam, :class => "myButton" %>
+<div id="velg-thumbs">
+<% if !velg_show.afbeelding1.nil? %>
+<div class="velg-thumb odd"><div class="img-hold"><a class="single_image" rel='<%= velg_show.naam.gsub(/\s+/, "") %>' href='<%= velg_show.afbeelding1.url %>' ><%= image_fu velg_show.afbeelding1, '170x170', :alt => "" %></a></div></div>
+<% end %>
+<% if !velg_show.afbeelding2.nil? %>
+<div class="velg-thumb even"><div class="img-hold"><a class="single_image" rel='<%= velg_show.naam.gsub(/\s+/, "") %>' href='<%= velg_show.afbeelding2.url %>' ><%= image_fu velg_show.afbeelding2, '170x170', :alt => "" %></a></div></div>
+<% end %>
+<% if !velg_show.afbeelding3.nil? %>
+<div class="velg-thumb odd"><div class="img-hold"><a class="single_image" rel='<%= velg_show.naam.gsub(/\s+/, "") %>' href='<%= velg_show.afbeelding3.url %>' ><%= image_fu velg_show.afbeelding3, '170x170', :alt => "" %></a></div></div>
+<% end %>
+<% if !velg_show.afbeelding4.nil? %>
+<div class="velg-thumb even"><div class="img-hold"><a class="single_image" rel='<%= velg_show.naam.gsub(/\s+/, "") %>' href='<%= velg_show.afbeelding4.url %>' ><%= image_fu velg_show.afbeelding4, '170x170', :alt => ""  %></a></div></div>
+<% end %>
+<% if !velg_show.afbeelding5.nil? %>
+<div class="velg-thumb odd"><div class="img-hold"><a class="single_image" rel='<%= velg_show.naam.gsub(/\s+/, "") %>' href='<%= velg_show.afbeelding5.url %>' ><%= image_fu velg_show.afbeelding5, '170x170', :alt => ""  %></a></div></div>
+<% end %>
+<% if !velg_show.afbeelding6.nil? %>
+<div class="velg-thumb even"><div class="img-hold"><a class="single_image" rel='<%= velg_show.naam.gsub(/\s+/, "") %>' href='<%= velg_show.afbeelding6.url %>' ><%= image_fu velg_show.afbeelding6, '170x170', :alt => ""  %></a></div></div>
+<% end %>
+<% if !velg_show.afbeelding7.nil? %>
+<div class="velg-thumb odd"><div class="img-hold"><a class="single_image" rel='<%= velg_show.naam.gsub(/\s+/, "") %>' href='<%= velg_show.afbeelding7.url %>' ><%= image_fu velg_show.afbeelding7, '170x170', :alt => ""  %></a></div></div>
+<% end %>
+</div>
+
+</div>
+<% end %>

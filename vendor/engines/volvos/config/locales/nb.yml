@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    volvos:
+      title: Volvos
+  admin:
+    volvos:
+      actions:
+        create_new: Lag en ny Volvo
+        reorder: Endre rekkefølgen på Volvos
+        reorder_done: Ferdig å endre rekkefølgen Volvos
+      records:
+        title: Volvos
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Volvos enda. Klikk på "Lag en ny Volvo" for å legge til din første volvo.
+      volvo:
+        view_live_html: Vis hvordan denne volvo ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne volvo
+        delete: Fjern denne volvo permanent
+  volvos:
+    show:
+      other: Andre Volvos

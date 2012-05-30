@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    vws:
+      title: Vws
+  admin:
+    vws:
+      actions:
+        create_new: CREATE NEW Vw
+        reorder: REORDR Vws
+        reorder_done: DUN REORDERIN Vws
+      records:
+        title: Vws
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Vws YET. CLICK "CREATE NEW Vw" 2 ADD UR FURST vw.
+      vw:
+        view_live_html: VIEW DIS vw LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS vw
+        delete: REMOOV DIS vw FOREVR
+  vws:
+    show:
+      other: OTHR Vws

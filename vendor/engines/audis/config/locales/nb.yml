@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    audis:
+      title: Audis
+  admin:
+    audis:
+      actions:
+        create_new: Lag en ny Audi
+        reorder: Endre rekkefølgen på Audis
+        reorder_done: Ferdig å endre rekkefølgen Audis
+      records:
+        title: Audis
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Audis enda. Klikk på "Lag en ny Audi" for å legge til din første audi.
+      audi:
+        view_live_html: Vis hvordan denne audi ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne audi
+        delete: Fjern denne audi permanent
+  audis:
+    show:
+      other: Andre Audis

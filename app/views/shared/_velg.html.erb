@@ -1,0 +1,15 @@
+<li>
+<div class="velg-summary" id="<%= eval(velg.merk + '_path(velg)')%>">
+<div class="velg-thumb-summary"><%= image_fu velg.afbeelding1, '100x100' %></div>
+<div class="velg-short">
+<h2><%= velg.naam %></h2><br>
+<% if !velg.grootte.nil? %>
+<p><%= velg.grootte %> inch</p>
+<% end %>
+<% if !velg.past.empty? %>
+<p><%= t("Past Op") %> <%=velg.past %></p>
+<% end %>
+</div>
+<div class="clearfix"></div>
+</div>
+</li>

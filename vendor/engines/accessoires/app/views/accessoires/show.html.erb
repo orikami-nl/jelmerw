@@ -1,0 +1,75 @@
+<% content_for :body_content_title do %>
+  <%= @accessoire.title %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Title</h1>
+    <p>
+      <%=raw @accessoire.title %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @accessoire.description %>
+    </p>
+  </section>
+  <section>
+    <h1>Afbeelding1</h1>
+    <p>
+      <%= image_fu @accessoire.afbeelding1, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Afbeelding2</h1>
+    <p>
+      <%= image_fu @accessoire.afbeelding2, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Afbeelding3</h1>
+    <p>
+      <%= image_fu @accessoire.afbeelding3, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Afbeelding4</h1>
+    <p>
+      <%= image_fu @accessoire.afbeelding4, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Afbeelding5</h1>
+    <p>
+      <%= image_fu @accessoire.afbeelding5, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Afbeelding6</h1>
+    <p>
+      <%= image_fu @accessoire.afbeelding6, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Afbeelding7</h1>
+    <p>
+      <%= image_fu @accessoire.afbeelding7, nil %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="accessoires">
+      <% @accessoires.each do |accessoire| %>
+        <li>
+          <%= link_to accessoire.title, accessoire_path(accessoire) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

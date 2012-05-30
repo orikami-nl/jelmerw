@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    bmws:
+      title: Bmws
+  admin:
+    bmws:
+      actions:
+        create_new: Add New Bmw
+        reorder: Reorder Bmws
+        reorder_done: Done Reordering Bmws
+      records:
+        title: Bmws
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Bmws yet. Click "Add New Bmw" to add your first bmw.
+      bmw:
+        view_live_html: View this bmw live <br/><em>(opens in a new window)</em>
+        edit: Edit this bmw
+        delete: Remove this bmw forever
+  bmws:
+    show:
+      other: Other Bmws

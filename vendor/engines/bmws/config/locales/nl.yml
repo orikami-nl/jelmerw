@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    bmws:
+      title: Bmws
+  admin:
+    bmws:
+      actions:
+        create_new: Maak een nieuwe Bmw
+        reorder: Wijzig de volgorde van de Bmws
+        reorder_done: Klaar met het wijzingen van de volgorde van de Bmws
+      records:
+        title: Bmws
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Bmws. Druk op 'Maak een nieuwe Bmw' om de eerste aan te maken.
+      bmw:
+        view_live_html: Bekijk deze bmw op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze bmw
+        delete: Verwijder deze bmw voor eeuwig
+  bmws:
+    show:
+      other: Andere Bmws

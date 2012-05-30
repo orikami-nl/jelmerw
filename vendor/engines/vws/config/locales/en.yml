@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    vws:
+      title: Vws
+  admin:
+    vws:
+      actions:
+        create_new: Add New Vw
+        reorder: Reorder Vws
+        reorder_done: Done Reordering Vws
+      records:
+        title: Vws
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Vws yet. Click "Add New Vw" to add your first vw.
+      vw:
+        view_live_html: View this vw live <br/><em>(opens in a new window)</em>
+        edit: Edit this vw
+        delete: Remove this vw forever
+  vws:
+    show:
+      other: Other Vws

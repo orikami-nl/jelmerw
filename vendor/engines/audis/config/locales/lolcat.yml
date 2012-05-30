@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    audis:
+      title: Audis
+  admin:
+    audis:
+      actions:
+        create_new: CREATE NEW Audi
+        reorder: REORDR Audis
+        reorder_done: DUN REORDERIN Audis
+      records:
+        title: Audis
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Audis YET. CLICK "CREATE NEW Audi" 2 ADD UR FURST audi.
+      audi:
+        view_live_html: VIEW DIS audi LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS audi
+        delete: REMOOV DIS audi FOREVR
+  audis:
+    show:
+      other: OTHR Audis

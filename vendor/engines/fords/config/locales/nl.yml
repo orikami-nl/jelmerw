@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    fords:
+      title: Fords
+  admin:
+    fords:
+      actions:
+        create_new: Maak een nieuwe Ford
+        reorder: Wijzig de volgorde van de Fords
+        reorder_done: Klaar met het wijzingen van de volgorde van de Fords
+      records:
+        title: Fords
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Fords. Druk op 'Maak een nieuwe Ford' om de eerste aan te maken.
+      ford:
+        view_live_html: Bekijk deze ford op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze ford
+        delete: Verwijder deze ford voor eeuwig
+  fords:
+    show:
+      other: Andere Fords

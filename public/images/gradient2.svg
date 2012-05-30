@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg3021"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   width="522"
+   height="1052.3622"
+   sodipodi:docname="gradient2.svg">
+  <metadata
+     id="metadata3036">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1024"
+     inkscape:window-height="574"
+     id="namedview3034"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="531.54724"
+     inkscape:cy="-56.606722"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3021" />
+  <defs
+     id="defs3023">
+    <linearGradient
+       id="myLinearGradient1"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="32.440132"
+       spreadMethod="pad"
+       gradientTransform="matrix(0.09247803,0,0,32.440132,520,0)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#ffffff"
+         stop-opacity="1"
+         id="stop3026" />
+      <stop
+         offset="0"
+         stop-color="#000000"
+         stop-opacity="1"
+         id="stop3028" />
+      <stop
+         offset="100%"
+         stop-color="#ffffff"
+         stop-opacity="1"
+         id="stop3030" />
+    </linearGradient>
+  </defs>
+  <rect
+     x="520"
+     y="0"
+     width="3"
+     height="1052.3622"
+     rx="0"
+     ry="1.5"
+     style="fill:url(#myLinearGradient1);fill-opacity:1.0"
+     id="rect3032" />
+</svg>

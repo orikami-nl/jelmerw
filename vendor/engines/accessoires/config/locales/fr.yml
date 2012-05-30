@@ -1,0 +1,25 @@
+fr:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    accessoires:
+      title: Accessoires
+  admin:
+    accessoires:
+      actions:
+        create_new: Créer un(e) nouve(au/l/lle) Accessoire
+        reorder: Réordonner les Accessoires
+        reorder_done: Fin de réordonnancement des Accessoires
+      records:
+        title: Accessoires
+        sorry_no_results: "Désolé ! Aucun résultat."
+        no_items_yet: 'Il n''y a actuellement aucun(e) Accessoire. Cliquer sur "Créer un(e) nouve(au/l/lle) Accessoire" pour créer votre premi(er/ère) accessoire.'
+      accessoire:
+        view_live_html: Voir ce(t/tte) accessoire <br/><em>(Ouvre une nouvelle fenêtre)</em>
+        edit: Modifier ce(t/tte) accessoire
+        delete: Supprimer définitivement ce(t/tte) accessoire
+  accessoires:
+    show:
+      other: Autres Accessoires

@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    peugeots:
+      title: Peugeots
+  admin:
+    peugeots:
+      actions:
+        create_new: Add New Peugeot
+        reorder: Reorder Peugeots
+        reorder_done: Done Reordering Peugeots
+      records:
+        title: Peugeots
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Peugeots yet. Click "Add New Peugeot" to add your first peugeot.
+      peugeot:
+        view_live_html: View this peugeot live <br/><em>(opens in a new window)</em>
+        edit: Edit this peugeot
+        delete: Remove this peugeot forever
+  peugeots:
+    show:
+      other: Other Peugeots

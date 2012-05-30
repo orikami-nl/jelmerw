@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    accessoires:
+      title: Accessoires
+  admin:
+    accessoires:
+      actions:
+        create_new: Lag en ny Accessoire
+        reorder: Endre rekkefølgen på Accessoires
+        reorder_done: Ferdig å endre rekkefølgen Accessoires
+      records:
+        title: Accessoires
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Accessoires enda. Klikk på "Lag en ny Accessoire" for å legge til din første accessoire.
+      accessoire:
+        view_live_html: Vis hvordan denne accessoire ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne accessoire
+        delete: Fjern denne accessoire permanent
+  accessoires:
+    show:
+      other: Andre Accessoires

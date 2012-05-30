@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    volvos:
+      title: Volvos
+  admin:
+    volvos:
+      actions:
+        create_new: Maak een nieuwe Volvo
+        reorder: Wijzig de volgorde van de Volvos
+        reorder_done: Klaar met het wijzingen van de volgorde van de Volvos
+      records:
+        title: Volvos
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Volvos. Druk op 'Maak een nieuwe Volvo' om de eerste aan te maken.
+      volvo:
+        view_live_html: Bekijk deze volvo op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze volvo
+        delete: Verwijder deze volvo voor eeuwig
+  volvos:
+    show:
+      other: Andere Volvos

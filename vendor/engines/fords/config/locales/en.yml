@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    fords:
+      title: Fords
+  admin:
+    fords:
+      actions:
+        create_new: Add New Ford
+        reorder: Reorder Fords
+        reorder_done: Done Reordering Fords
+      records:
+        title: Fords
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Fords yet. Click "Add New Ford" to add your first ford.
+      ford:
+        view_live_html: View this ford live <br/><em>(opens in a new window)</em>
+        edit: Edit this ford
+        delete: Remove this ford forever
+  fords:
+    show:
+      other: Other Fords

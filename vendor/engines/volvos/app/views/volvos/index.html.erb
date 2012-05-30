@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="volvos">
+    <% @volvos.each do |volvo| %>
+      <li>
+        <%= link_to volvo.naam, volvo_path(volvo) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

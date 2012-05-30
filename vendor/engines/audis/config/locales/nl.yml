@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    audis:
+      title: Audis
+  admin:
+    audis:
+      actions:
+        create_new: Maak een nieuwe Audi
+        reorder: Wijzig de volgorde van de Audis
+        reorder_done: Klaar met het wijzingen van de volgorde van de Audis
+      records:
+        title: Audis
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Audis. Druk op 'Maak een nieuwe Audi' om de eerste aan te maken.
+      audi:
+        view_live_html: Bekijk deze audi op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze audi
+        delete: Verwijder deze audi voor eeuwig
+  audis:
+    show:
+      other: Andere Audis

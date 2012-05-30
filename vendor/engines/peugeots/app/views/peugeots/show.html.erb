@@ -1,0 +1,99 @@
+<% content_for :body_content_title do %>
+  <%= @peugeot.naam %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Naam</h1>
+    <p>
+      <%=raw @peugeot.naam %>
+    </p>
+  </section>
+  <section>
+    <h1>Grootte</h1>
+    <p>
+      <%=raw @peugeot.grootte %>
+    </p>
+  </section>
+  <section>
+    <h1>Steek</h1>
+    <p>
+      <%=raw @peugeot.steek %>
+    </p>
+  </section>
+  <section>
+    <h1>Et</h1>
+    <p>
+      <%=raw @peugeot.et %>
+    </p>
+  </section>
+  <section>
+    <h1>Breedte</h1>
+    <p>
+      <%=raw @peugeot.breedte %>
+    </p>
+  </section>
+  <section>
+    <h1>Past</h1>
+    <p>
+      <%=raw @peugeot.past %>
+    </p>
+  </section>
+  <section>
+    <h1>Spacer</h1>
+    <p>
+      <%=raw @peugeot.spacer %>
+    </p>
+  </section>
+  <section>
+    <h1>Tevens</h1>
+    <p>
+      <%=raw @peugeot.tevens %>
+    </p>
+  </section>
+  <section>
+    <h1>Vanaf</h1>
+    <p>
+      <%=raw @peugeot.vanaf %>
+    </p>
+  </section>
+  <section>
+    <h1>Afbeelding1</h1>
+    <p>
+      <%= image_fu @peugeot.afbeelding1, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Afbeelding2</h1>
+    <p>
+      <%= image_fu @peugeot.afbeelding2, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Afbeelding3</h1>
+    <p>
+      <%= image_fu @peugeot.afbeelding3, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Afbeelding4</h1>
+    <p>
+      <%= image_fu @peugeot.afbeelding4, nil %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="peugeots">
+      <% @peugeots.each do |peugeot| %>
+        <li>
+          <%= link_to peugeot.naam, peugeot_path(peugeot) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

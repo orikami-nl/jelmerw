@@ -1,0 +1,14 @@
+<nav id='language-selector'>
+  <% ::Refinery::I18n.frontend_locales.each do |locale| %>
+    <%= link_to_if Globalize.locale.to_s != locale.to_s, image_tag(locale.to_s + '.png'), {:locale => locale} %>
+  <% end %>
+</nav> 
+
+<div id="topmenucontainer">
+<div id="topmenu">
+<%= render(:partial => "/shared/menu", :locals => {
+             :dom_id => 'menu',
+             :css => 'menu'
+           }) %>
+</div>
+</div>

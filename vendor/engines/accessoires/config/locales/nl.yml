@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    accessoires:
+      title: Accessoires
+  admin:
+    accessoires:
+      actions:
+        create_new: Maak een nieuwe Accessoire
+        reorder: Wijzig de volgorde van de Accessoires
+        reorder_done: Klaar met het wijzingen van de volgorde van de Accessoires
+      records:
+        title: Accessoires
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Accessoires. Druk op 'Maak een nieuwe Accessoire' om de eerste aan te maken.
+      accessoire:
+        view_live_html: Bekijk deze accessoire op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze accessoire
+        delete: Verwijder deze accessoire voor eeuwig
+  accessoires:
+    show:
+      other: Andere Accessoires

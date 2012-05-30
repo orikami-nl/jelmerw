@@ -1,0 +1,33 @@
+<% cache("#{accessoire_show.id}#{accessoire_show.title}#{params[:locale]}") do %> 
+<div class="velg-full">
+<h2><%= accessoire_show.title %><br></h2>
+<br>
+<h3><%= t("Omschrijving") %></h3><br>
+<%= accessoire_show.description.html_safe %>
+<br>
+<br>
+<%= link_to t("Info opvragen of bestellen"), '/' + locale.to_s + '/contact?velg=' + accessoire_show.title, :class => "myButton" %>
+
+<% if !accessoire_show.afbeelding1.nil? %>
+<div class="velg-thumb"><div class="img-hold"><a class="single_image" rel='<%= accessoire_show.title.gsub(/\s+/, "") %>' href='<%= accessoire_show.afbeelding1.url %>' ><%= image_fu accessoire_show.afbeelding1, '170x170', :alt => "" %></a></div></div>
+<% end %>
+<% if !accessoire_show.afbeelding2.nil? %>
+<div class="velg-thumb"><div class="img-hold"><a class="single_image" rel='<%= accessoire_show.title.gsub(/\s+/, "") %>' href='<%= accessoire_show.afbeelding2.url %>' ><%= image_fu accessoire_show.afbeelding2, '170x170', :alt => "" %></a></div></div>
+<% end %>
+<% if !accessoire_show.afbeelding3.nil? %>
+<div class="velg-thumb"><div class="img-hold"><a class="single_image" rel='<%= accessoire_show.title.gsub(/\s+/, "") %>' href='<%= accessoire_show.afbeelding3.url %>' ><%= image_fu accessoire_show.afbeelding3, '170x170', :alt => "" %></a></div></div>
+<% end %>
+<% if !accessoire_show.afbeelding4.nil? %>
+<div class="velg-thumb"><div class="img-hold"><a class="single_image" rel='<%= accessoire_show.title.gsub(/\s+/, "") %>' href='<%= accessoire_show.afbeelding4.url %>' ><%= image_fu accessoire_show.afbeelding4, '170x170', :alt => ""  %></a></div></div>
+<% end %>
+<% if !accessoire_show.afbeelding5.nil? %>
+<div class="velg-thumb"><div class="img-hold"><a class="single_image" rel='<%= accessoire_show.title.gsub(/\s+/, "") %>' href='<%= accessoire_show.afbeelding5.url %>' ><%= image_fu accessoire_show.afbeelding5, '170x170', :alt => ""  %></a></div></div>
+<% end %>
+<% if !accessoire_show.afbeelding6.nil? %>
+<div class="velg-thumb"><div class="img-hold"><a class="single_image" rel='<%= accessoire_show.title.gsub(/\s+/, "") %>' href='<%= accessoire_show.afbeelding6.url %>' ><%= image_fu accessoire_show.afbeelding6, '170x170', :alt => ""  %></a></div></div>
+<% end %>
+<% if !accessoire_show.afbeelding7.nil? %>
+<div class="velg-thumb"><div class="img-hold"><a class="single_image" rel='<%= accessoire_show.title.gsub(/\s+/, "") %>' href='<%= accessoire_show.afbeelding7.url %>' ><%= image_fu accessoire_show.afbeelding7, '170x170', :alt => ""  %></a></div></div>
+<% end %>
+</div>
+<% end %>

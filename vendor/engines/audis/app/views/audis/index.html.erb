@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="audis">
+    <% @audis.each do |audi| %>
+      <li>
+        <%= link_to audi.naam, audi_path(audi) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

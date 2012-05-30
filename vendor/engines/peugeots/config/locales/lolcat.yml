@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    peugeots:
+      title: Peugeots
+  admin:
+    peugeots:
+      actions:
+        create_new: CREATE NEW Peugeot
+        reorder: REORDR Peugeots
+        reorder_done: DUN REORDERIN Peugeots
+      records:
+        title: Peugeots
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Peugeots YET. CLICK "CREATE NEW Peugeot" 2 ADD UR FURST peugeot.
+      peugeot:
+        view_live_html: VIEW DIS peugeot LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS peugeot
+        delete: REMOOV DIS peugeot FOREVR
+  peugeots:
+    show:
+      other: OTHR Peugeots

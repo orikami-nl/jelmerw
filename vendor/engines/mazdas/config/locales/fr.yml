@@ -1,0 +1,25 @@
+fr:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    mazdas:
+      title: Mazdas
+  admin:
+    mazdas:
+      actions:
+        create_new: Créer un(e) nouve(au/l/lle) Mazda
+        reorder: Réordonner les Mazdas
+        reorder_done: Fin de réordonnancement des Mazdas
+      records:
+        title: Mazdas
+        sorry_no_results: "Désolé ! Aucun résultat."
+        no_items_yet: 'Il n''y a actuellement aucun(e) Mazda. Cliquer sur "Créer un(e) nouve(au/l/lle) Mazda" pour créer votre premi(er/ère) mazda.'
+      mazda:
+        view_live_html: Voir ce(t/tte) mazda <br/><em>(Ouvre une nouvelle fenêtre)</em>
+        edit: Modifier ce(t/tte) mazda
+        delete: Supprimer définitivement ce(t/tte) mazda
+  mazdas:
+    show:
+      other: Autres Mazdas

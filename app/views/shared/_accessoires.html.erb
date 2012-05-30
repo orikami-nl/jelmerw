@@ -1,0 +1,15 @@
+<% content_for :body_content_left do %>
+<% if !accessoires.first.nil? %>
+<div class="velgen-left">  
+  <ul id="velgen">
+	<%= render :partial => "/shared/accessoire", :collection => accessoires %>
+  </ul>
+</div>
+<div class="velgen-right">
+	<%= render :partial => "/shared/accessoire_show", :object => accessoires.first %>
+</div>
+<div class="clearfix"></div>
+<% else %>
+<%= t("Geen Toebehoren Beschikbaar") %>
+<% end %>
+<% end %>

@@ -1,0 +1,25 @@
+fr:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    fords:
+      title: Fords
+  admin:
+    fords:
+      actions:
+        create_new: Créer un(e) nouve(au/l/lle) Ford
+        reorder: Réordonner les Fords
+        reorder_done: Fin de réordonnancement des Fords
+      records:
+        title: Fords
+        sorry_no_results: "Désolé ! Aucun résultat."
+        no_items_yet: 'Il n''y a actuellement aucun(e) Ford. Cliquer sur "Créer un(e) nouve(au/l/lle) Ford" pour créer votre premi(er/ère) ford.'
+      ford:
+        view_live_html: Voir ce(t/tte) ford <br/><em>(Ouvre une nouvelle fenêtre)</em>
+        edit: Modifier ce(t/tte) ford
+        delete: Supprimer définitivement ce(t/tte) ford
+  fords:
+    show:
+      other: Autres Fords

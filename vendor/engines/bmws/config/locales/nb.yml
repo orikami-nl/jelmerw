@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    bmws:
+      title: Bmws
+  admin:
+    bmws:
+      actions:
+        create_new: Lag en ny Bmw
+        reorder: Endre rekkefølgen på Bmws
+        reorder_done: Ferdig å endre rekkefølgen Bmws
+      records:
+        title: Bmws
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Bmws enda. Klikk på "Lag en ny Bmw" for å legge til din første bmw.
+      bmw:
+        view_live_html: Vis hvordan denne bmw ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne bmw
+        delete: Fjern denne bmw permanent
+  bmws:
+    show:
+      other: Andre Bmws

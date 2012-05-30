@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    fords:
+      title: Fords
+  admin:
+    fords:
+      actions:
+        create_new: CREATE NEW Ford
+        reorder: REORDR Fords
+        reorder_done: DUN REORDERIN Fords
+      records:
+        title: Fords
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Fords YET. CLICK "CREATE NEW Ford" 2 ADD UR FURST ford.
+      ford:
+        view_live_html: VIEW DIS ford LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS ford
+        delete: REMOOV DIS ford FOREVR
+  fords:
+    show:
+      other: OTHR Fords

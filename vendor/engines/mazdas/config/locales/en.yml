@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    mazdas:
+      title: Mazdas
+  admin:
+    mazdas:
+      actions:
+        create_new: Add New Mazda
+        reorder: Reorder Mazdas
+        reorder_done: Done Reordering Mazdas
+      records:
+        title: Mazdas
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Mazdas yet. Click "Add New Mazda" to add your first mazda.
+      mazda:
+        view_live_html: View this mazda live <br/><em>(opens in a new window)</em>
+        edit: Edit this mazda
+        delete: Remove this mazda forever
+  mazdas:
+    show:
+      other: Other Mazdas

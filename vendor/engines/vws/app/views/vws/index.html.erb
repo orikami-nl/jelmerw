@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="vws">
+    <% @vws.each do |vw| %>
+      <li>
+        <%= link_to vw.naam, vw_path(vw) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
